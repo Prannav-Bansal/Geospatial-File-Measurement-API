@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Test Features</name>
+    <description>Sample KML for testing the Geospatial Measurement API</description>
+
+    <!-- A polygon (roughly a rectangular plot near Bangalore, India) -->
+    <Placemark>
+      <name>Test Polygon</name>
+      <description>A rectangular plot</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5946,12.9716,0
+              77.5956,12.9716,0
+              77.5956,12.9726,0
+              77.5946,12.9726,0
+              77.5946,12.9716,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- A linestring (a road segment) -->
+    <Placemark>
+      <name>Test LineString</name>
+      <description>A road segment</description>
+      <LineString>
+        <coordinates>
+          77.5946,12.9716,0
+          77.5960,12.9730,0
+          77.5975,12.9740,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- A point (a station) -->
+    <Placemark>
+      <name>Test Point</name>
+      <description>A station marker</description>
+      <Point>
+        <coordinates>77.5946,12.9716,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>
